@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OpenData Bordeaux</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Heure</th>
+      <th>Prévision</th>
+    </tr>
+    {% for value in data %}
+    <tr>
+      <td>{{value['bm_heure']}}</td>
+      <td>{{value['bm_prevision']}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+
+</html>
